@@ -238,7 +238,7 @@ class TwitchPlays(twitchio.ext.commands.bot.Bot):
                     f.write(f'{twitch_message.get_log_string()}\n')
 
             # Ignore bot messages
-            if twitch_message.username in ['controlmybot', 'cmpclive', 'cmpcserver']:
+            if twitch_message.username in ['twitchcontrolsmypc', 'fucku', 'streamelements']:
                 log.info(f'Ignored message from {twitch_message.username} due to exemption.')
                 return
             # Ignore echo messages
