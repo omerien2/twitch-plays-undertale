@@ -1,6 +1,6 @@
 [More documentation in the central wiki.](https://gitlab.com/controlmypc/docs/-/wikis/documentation/Script)
 
-(This is a fork of https://gitlab.com/cmpcsg/TwitchPlays. The history of the repo is still here.)
+(This is a fork of https://gitlab.com/cmpcsg/TwitchPlays. The history of the repo is still here, although every profile link has been replaced by the github URL.)
 (This is basically their stuff but with some commands deleted.)
 
 # TwitchPlays
