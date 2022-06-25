@@ -41,10 +41,7 @@ class CommandProcessor:
     """
 
     KEY_PRESS_COMMANDS = {
-        ('enter',): 'enter',
-        ('tab',): 'tab',
-        ('esc', 'escape',): 'esc',
-        ('windows key', 'win',): 'win',
+        ('enter', 'z'): 'enter',e
         ('backspace', 'back space', 'delete',): 'backspace',
         ('space', 'spacebar', 'space bar'): 'space',
         ('page up', 'pageup',): 'pageup',
@@ -52,11 +49,7 @@ class CommandProcessor:
         ('arrow down',): 'down',
         ('arrow up',): 'up',
         ('arrow left',): 'left',
-        ('arrow right',): 'right',
-        ('refresh', 'reload', 'f5'): 'f5',
-        ('where', 'where?'): 'ctrl',
-        ('forward', 'forwards', 'browserforward', 'browser forward'): 'browserforward',
-        ('back', 'backward', 'backwards', 'browserback', 'browser back'): 'browserback',
+        ('arrow right', 'right',): 'right',
     }
 
     HOTKEY_COMMANDS = {
