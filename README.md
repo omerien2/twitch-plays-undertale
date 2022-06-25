@@ -1,8 +1,11 @@
 [More documentation in the central wiki.](https://gitlab.com/controlmypc/docs/-/wikis/documentation/Script)
 
+(This is a fork of https://gitlab.com/cmpcsg/TwitchPlays. The history of the repo is still here.)
+(This is basically their stuff but with some commands deleted.)
+
 # TwitchPlays
 
-The script that allows controlling of a pc remotely through a Twitch chat. Started as an overhaul update to DougDoug TwitchPlays script.
+The script that allows controlling of ~~a pc~~ Undertale remotely through a Twitch chat. Started as an overhaul update to DougDoug TwitchPlays script.
 
 
 # NOTICE: Under the license, you must disclose the source of this code in all usages. 
@@ -49,4 +52,4 @@ Example static user list.
 
 Close individual instances if multiple are running by accident, using the new `../script id` and `../script stop <id>` commands.
 
-For more, see the [changelog](https://gitlab.com/controlmypc/TwitchPlays/-/blob/main/CHANGELOG.md).
+For more, see the [changelog](https://github.com/omerien/twitch-plays-undertale/blob/main/CHANGELOG.md).
