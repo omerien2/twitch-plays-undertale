@@ -2,6 +2,7 @@
 
 (This is a fork of https://gitlab.com/cmpcsg/TwitchPlays. The history of the repo is still here, although every profile link has been replaced by the github URL.)
 (This is basically their stuff but with some commands deleted.)
+(I will not support any installation, and I put it as a Github repo only for practical use.)
 
 # TwitchPlays
 
