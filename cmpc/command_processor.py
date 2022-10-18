@@ -41,91 +41,87 @@ class CommandProcessor:
     """
 
     KEY_PRESS_COMMANDS = {
-        ('enter', 'z'): 'enter',e
-        ('backspace', 'back space', 'delete',): 'backspace',
-        ('space', 'spacebar', 'space bar'): 'space',
-        ('page up', 'pageup',): 'pageup',
-        ('page down', 'pagedown',): 'pagedown',
-        ('arrow down',): 'down',
-        ('arrow up',): 'up',
-        ('arrow left',): 'left',
+        ('enter', 'z',): 'enter',
+        ('arrow down', 'down',): 'down',
+        ('arrow up', 'up',): 'up',
+        ('arrow left', 'left',): 'left',
         ('arrow right', 'right',): 'right',
     }
 
     HOTKEY_COMMANDS = {
-        ('control t', 'ctrl t', 'new tab',): ('ctrl', 't',),
-        ('control s', 'ctrl s', 'save',): ('ctrl', 's',),
-        ('control z', 'ctrl z', 'undo',): ('ctrl', 'z',),
-        ('control c', 'ctrl s', 'copy',): ('ctrl', 'c',),
-        ('control v', 'ctrl v', 'paste',): ('ctrl', 'v',),
-        ('control w', 'ctrl w', 'close tab', 'close the tab',): ('ctrl', 'w',),
-        ('control a', 'ctrl a', 'select all',): ('ctrl', 'a',),
-        ('control k', 'ctrl k', 'tayne',): ('ctrl', 'k',),
-        ('control /', 'ctrl /',): ('ctrl', '/'),
-        ('quit',): ('altleft', 'f4',),
-        ('alt tab', 'alt-tab',): ('altleft', 'tab',),
-        ('screenshot', 'screen shot',): ('win', 'prtsc',),
+#        ('control t', 'ctrl t', 'new tab',): ('ctrl', 't',),
+#        ('control s', 'ctrl s', 'save',): ('ctrl', 's',),
+#        ('control z', 'ctrl z', 'undo',): ('ctrl', 'z',),
+#        ('control c', 'ctrl s', 'copy',): ('ctrl', 'c',),
+#        ('control v', 'ctrl v', 'paste',): ('ctrl', 'v',),
+#        ('control w', 'ctrl w', 'close tab', 'close the tab',): ('ctrl', 'w',),
+#        ('control a', 'ctrl a', 'select all',): ('ctrl', 'a',),
+#        ('control k', 'ctrl k', 'tayne',): ('ctrl', 'k',),
+#        ('control /', 'ctrl /',): ('ctrl', '/'),
+#        ('quit',): ('altleft', 'f4',),
+#        ('alt tab', 'alt-tab',): ('altleft', 'tab',),
+#        ('screenshot', 'screen shot',): ('win', 'prtsc',),
     }
 
     # note that here doubleclick is not actually a valid pyautogui input, but it gets fixed in the actual def later on
     CLICK_COMMANDS = {
-        ('click', 'leftclick', 'left click',): 'left',
-        ('doubleclick', 'double click',): 'doubleclick',
-        ('rightclick', 'right click',): 'right',
-        ('middleclick', 'middle click',): 'middle',
+#        ('click', 'leftclick', 'left click',): 'left',
+#        ('doubleclick', 'double click',): 'doubleclick',
+#        ('rightclick', 'right click',): 'right',
+#        ('middleclick', 'middle click',): 'middle',
     }
 
     MOUSE_HOLD_COMMANDS = {
-        ('hold mouse', 'hold the mouse',): 3,
-        ('hold mouse long', 'hold the mouse long',): 9,
+#        ('hold mouse', 'hold the mouse',): 3,
+#        ('hold mouse long', 'hold the mouse long',): 9,
     }
 
     MOUSE_SCROLL_COMMANDS = {
-        ('scroll down',): -60,
-        ('scroll up',): 60,
+#        ('scroll down',): -60,
+#        ('scroll up',): 60,
     }
 
     MOUSE_HORIZONTAL_SCROLL_COMMANDS = {
-        ('scroll left',): 60,
-        ('scroll right',): -60,
+#        ('scroll left',): 60,
+#        ('scroll right',): -60,
     }
 
     MOUSE_MOVE_COMMANDS = {
-        ('left',): (-100, 0,),
-        ('light left', 'little left', 'slight left',): (-25, 0,),
-        ('super light left', 'super little left', 'super slight left',): (-10, 0,),
-        ('right',): (100, 0,),
-        ('light right', 'little right', 'slight right',): (25, 0,),
-        ('super light right', 'super little right', 'super slight right',): (10, 0,),
-        ('up',): (0, -100,),
-        ('light up', 'little up', 'slight up',): (0, -25,),
-        ('super light up', 'super little up', 'super slight up',): (0, -10,),
-        ('down',): (0, 100,),
-        ('light down', 'little down', 'slight down',): (0, 25,),
-        ('super light down', 'super little down', 'super slight down',): (0, 10,),
+#        ('left',): (-100, 0,),
+#        ('light left', 'little left', 'slight left',): (-25, 0,),
+#        ('super light left', 'super little left', 'super slight left',): (-10, 0,),
+#        ('right',): (100, 0,),
+#        ('light right', 'little right', 'slight right',): (25, 0,),
+#        ('super light right', 'super little right', 'super slight right',): (10, 0,),
+#        ('up',): (0, -100,),
+#        ('light up', 'little up', 'slight up',): (0, -25,),
+#        ('super light up', 'super little up', 'super slight up',): (0, -10,),
+#        ('down',): (0, 100,),
+#        ('light down', 'little down', 'slight down',): (0, 25,),
+#        ('super light down', 'super little down', 'super slight down',): (0, 10,),
     }
 
     MOUSE_DRAG_COMMANDS = {
-        ('drag up', 'drag mouse up',): (0, -50, 0.75,),
-        ('drag down', 'drag mouse down',): (0, 50, 0.75,),
-        ('drag right', 'drag mouse right',): (50, 0, 0.75,),
-        ('drag left', 'drag mouse left',): (-50, 0, 0.75,),
+#        ('drag up', 'drag mouse up',): (0, -50, 0.75,),
+#        ('drag down', 'drag mouse down',): (0, 50, 0.75,),
+#        ('drag right', 'drag mouse right',): (50, 0, 0.75,),
+#        ('drag left', 'drag mouse left',): (-50, 0, 0.75,),
     }
 
     TYPE_COMMANDS = (
-        'type ',
-        'press ',
+#        'type ',
+#        'press ',
     )  # note trailing space - this is to process args better
 
     HOLD_KEY_COMMANDS = {
-        'd for ': 'd',
-        'a for ': 'a',
-        's for ': 's',
-        'w for ': 'w',
-        'arrow up for ': 'up',
-        'arrow left for ': 'left',
-        'arrow right for ': 'right',
-        'arrow down for ': 'down',
+#        'd for ': 'd',
+#        'a for ': 'a',
+#        's for ': 's',
+#        'w for ': 'w',
+        ('arrow up for ', 'nf ', 'up for ',): 'up',
+        ('arrow left for ', 'wf ', 'left for ',): 'left',
+        ('arrow right for ', 'ef ', 'right for ',): 'right',
+        ('arrow down for ', 'sf ', 'down for ',): 'down',
     }  # note trailing space - this is to process args better
 
     def __init__(self, bot, obs_file_name: typing.Union[str, Path],
@@ -151,15 +147,15 @@ class CommandProcessor:
         """
         commands = [
             self._process_key_press_commands,
-            self._process_click_commands,
-            self._process_mouse_move_commands,
-            self._process_hotkey_commands,
-            self._process_mouse_hold_commands,
-            self._process_mouse_scroll_commands,
-            self._process_mouse_horizontal_scroll_commands,
-            self._process_mouse_drag_commands,
-            self._process_misc_commands,
-            self._process_type_commands,
+#            self._process_click_commands,
+#            self._process_mouse_move_commands,
+#            self._process_hotkey_commands,
+#            self._process_mouse_hold_commands,
+#            self._process_mouse_scroll_commands,
+#            self._process_mouse_horizontal_scroll_commands,
+#            self._process_mouse_drag_commands,
+#            self._process_misc_commands,
+#            self._process_type_commands,
             self._process_hold_key_commands,
         ]
 
